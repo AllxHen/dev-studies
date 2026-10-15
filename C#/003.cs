@@ -1,44 +1,40 @@
 using System;
+using System.Runtime.Serialization;
 
-namespace praticando
+namespace Praticando
 {
-    class Ex02
+    internal class EX03
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Digite um numero:");
-            int numero = int.Parse(Console.ReadLine());
-            Console.WriteLine("Digite outro numero:");
+            Console.WriteLine("Digite um numero: ");
+            int numero1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite um numero: ");
             int numero2 = int.Parse(Console.ReadLine());
-            Console.WriteLine("Escolha a operacao: +, -, *, /");
-            string conta = Console.ReadLine();
 
-            double resultado = 0; 
+            Console.WriteLine("Escolha: +, -, /, *");
+            string processo = (Console.ReadLine());
 
-            if (conta == "+")
+            if (processo == "-")
             {
-                resultado = numero + numero2;
-                Console.WriteLine($"Resultado: {resultado}");
+                Console.Write(numero1 - numero2);
+
             }
-            else if (conta == "-")
+
+            else if (processo == "+") {
+                Console.Write(numero1 + numero2);
+            }
+
+            else if (processo == "/")
             {
-                resultado = numero - numero2;
-                Console.WriteLine($"Resultado: {resultado}");
+                Console.Write(numero1 / numero2);
             }
-            else if (conta == "*")
+
+            else if (processo == "*")
             {
-                resultado = numero * numero2;
-                Console.WriteLine($"Resultado: {resultado}");
+                Console.Write(numero1 * numero2);
             }
-            else if (conta == "/")
-            {
-                resultado = (double)numero / numero2;
-                Console.WriteLine($"Resultado: {resultado}");
-            }
-            else
-            {
-                Console.WriteLine("Operação inválida!");
-            }
+
         }
     }
 }
