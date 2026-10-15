@@ -1,7 +1,5 @@
-const prompt = require ("prompt-sync")();
-
 function verificarIdade() {
-    let idade = Number(prompt("Digite sua idade:"))
+    let idade = 20
     if (idade >= 18){
         console.log("Maior de idade!")
     }
