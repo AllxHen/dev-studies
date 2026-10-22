@@ -3,9 +3,6 @@ let jogador = {
     vida: 100
 }
 
-let recuperar = 0
-let dano = 0
-
 function receberDano(jogador, dano){
     jogador.vida = jogador.vida - dano
     console.log(jogador)
