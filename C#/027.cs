@@ -1,8 +1,8 @@
 using System;
 
-namespace ProjetoLanchonete 
+namespace Ex00 
 {
-    public class ProjetoLanchonete 
+    public class Ex00 
     {
         public static void Main(string[] args) 
         {            
